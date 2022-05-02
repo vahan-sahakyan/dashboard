@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link id="dark-css" rel="stylesheet" href="dark.css" /> -->
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <script
+      src="https://kit.fontawesome.com/ae9f9b9e0e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="./favicon.png" />
+
+    <!-- SCRIPTS -->
+    <script defer src="./script.js"></script>
+
+    <title>Dashboard UI</title>
+  </head>
+  <body>
+    <div class="root">
+      <aside class="sidebar">
+        <div class="sidebar-head">
+          <h1 id="logo">SAMPLE UI</h1>
+          <img id="toggle-sidebar" src="./assets/more.png" />
+        </div>
+
+        <ul class="menu-items">
+          <li class="active_menu-item">
+            <i class="menu-item_icon fa-solid fa-house"></i>
+            <p class="menu-item_text">Home</p>
+          </li>
+          <li>
+            <i class="menu-item_icon fa-solid fa-arrow-trend-up"></i>
+            <p class="menu-item_text">Dashboard</p>
+          </li>
+          <li>
+            <i class="menu-item_icon fa-solid fa-pencil"></i>
+            <p class="menu-item_text">Qualitative Estimation</p>
+          </li>
+          <li>
+            <i class="menu-item_icon fa-solid fa-gear"></i>
+            <p class="menu-item_text">Signal Project</p>
+          </li>
+          <li>
+            <i class="menu-item_icon fa-solid fa-stopwatch"></i>
+            <p class="menu-item_text">Run Results</p>
+          </li>
+          <li>
+            <i class="menu-item_icon fa-solid fa-file-lines"></i>
+            <p class="menu-item_text">Reports & Review</p>
+          </li>
+          <li>
+            <i class="menu-item_icon fa-solid fa-file-lines"></i>
+            <p class="menu-item_text">Signals</p>
+          </li>
+          <li>
+            <i class="menu-item_icon fa-solid fa-chart-simple"></i>
+            <p class="menu-item_text">Signal Monitoring</p>
+          </li>
+        </ul>
+      </aside>
+      <div class="wrapper">
+        <nav class="profile-navbar">
+          <div class="profile-navbar_icons">
+            <a href="#">
+              <img
+                alt="support-icon"
+                class="support-icon"
+                src="./assets/lifebuoy.png"
+              />
+            </a>
+            <a href="#">
+              <img
+                alt="settings-icon"
+                class="settings-icon"
+                src="./assets/setting.png"
+              />
+            </a>
+            <a href="#">
+              <img
+                alt="notification-icon"
+                class="notification-icon"
+                src="assets/notification.png"
+              />
+            </a>
+          </div>
+          <div class="user">
+            <span class="user_name"> Tigran Grigoryan</span
+            ><i class="fa-solid fa-chevron-down"></i>
+            <div class="user_avatar"></div>
+          </div>
+        </nav>
+        <div class="main-container">
+          <header class="main-header">
+            <h3 class="main-title">Home</h3>
+            <div class="alerts-description">
+              <div class="alert">
+                <div class="alert-icon fatal">F</div>
+                <span class="alert-name">Fatal</span>
+              </div>
+              <div class="alert">
+                <div class="alert-icon dme-31">D</div>
+                <span class="alert-name">DME 31</span>
+              </div>
+              <div class="alert">
+                <div class="alert-icon time-0">T</div>
+                <span class="alert-name">Time 0</span>
+              </div>
+              <div class="alert">
+                <div class="alert-icon interaction-360">I</div>
+                <span class="alert-name">Interaction 360</span>
+              </div>
+            </div>
+          </header>
+          <div class="main-content">
+            <div class="scroll-x">
+              <ul class="tabs-container">
+                <li class="tab active_tab">Drug Event</li>
+                <li class="tab">Signal Prioritization & Timelines</li>
+                <li class="tab">Risk Review - RBR</li>
+                <li class="tab">Potential Risks</li>
+                <li class="tab">Validation Risks</li>
+                <li class="tab">Signals</li>
+              </ul>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>DRUG</th>
+                    <th>EVENT</th>
+                    <th>
+                      STATUS
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </th>
+                    <th>ALERTS</th>
+                    <th>
+                      FATAL SINCE 2022 Q1
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </th>
+                    <th>
+                      FATAL SINCE 2022 Q2
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </th>
+                    <th>COMMENTS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Paracetamol</td>
+                    <td>Diarrhea</td>
+                    <td>Alert</td>
+                    <td>
+                      <div class="all-alerts">
+                        <div class="alert-icon fatal">F</div>
+                        <div class="alert-icon dme-31">D</div>
+                        <div class="alert-icon interaction-360">I</div>
+                      </div>
+                    </td>
+                    <td>13</td>
+                    <td>212</td>
+                    <td>Pending Further info</td>
+                  </tr>
+                  <tr>
+                    <td>Paracetamol</td>
+                    <td>Diarrhea</td>
+                    <td>Alert</td>
+                    <td>
+                      <div class="all-alerts">
+                        <div class="alert-icon fatal">F</div>
+                        <div class="alert-icon interaction-360">I</div>
+                      </div>
+                    </td>
+                    <td>10</td>
+                    <td>221</td>
+                    <td>Of Note</td>
+                  </tr>
+                  <tr>
+                    <td>Paracetamol</td>
+                    <td>Diarrhea</td>
+                    <td>Alert</td>
+                    <td>
+                      <div class="all-alerts">
+                        <div class="alert-icon fatal">F</div>
+                        <div class="alert-icon interaction-360">I</div>
+                      </div>
+                    </td>
+                    <td>10</td>
+                    <td>133</td>
+                    <td>Pending Further info</td>
+                  </tr>
+                  <tr>
+                    <td>Paracetamol</td>
+                    <td>Diarrhea</td>
+                    <td>Alert</td>
+                    <td>
+                      <div class="all-alerts">
+                        <div class="alert-icon fatal">F</div>
+                        <div class="alert-icon dme-31">D</div>
+                        <div class="alert-icon interaction-360">I</div>
+                      </div>
+                    </td>
+                    <td>9</td>
+                    <td>133</td>
+                    <td>Of Note</td>
+                  </tr>
+                  <tr>
+                    <td>Paracetamol</td>
+                    <td>Diarrhea</td>
+                    <td>Alert</td>
+                    <td>
+                      <div class="all-alerts">
+                        <div class="alert-icon fatal">F</div>
+
+                        <div class="alert-icon interaction-360">I</div>
+                      </div>
+                    </td>
+                    <td>7</td>
+                    <td>82</td>
+                    <td>Of Note</td>
+                  </tr>
+                  <tr>
+                    <td>Paracetamol</td>
+                    <td>Diarrhea</td>
+                    <td>Alert</td>
+                    <td>
+                      <div class="all-alerts">
+                        <div class="alert-icon fatal">F</div>
+                      </div>
+                    </td>
+                    <td>7</td>
+                    <td>96</td>
+                    <td>Pending Further info</td>
+                  </tr>
+                  <tr>
+                    <td>Paracetamol</td>
+                    <td>Diarrhea</td>
+                    <td>Alert</td>
+                    <td>
+                      <div class="all-alerts">
+                        <div class="alert-icon fatal">F</div>
+                      </div>
+                    </td>
+                    <td>5</td>
+                    <td>89</td>
+                    <td>Pending Further info</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul class="pagination">
+              <li><i class="fa-solid fa-chevron-left page-chevron"></i></li>
+              <li class="active_page">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li><i class="fa-solid fa-chevron-right page-chevron"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
