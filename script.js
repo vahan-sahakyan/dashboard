@@ -4,8 +4,8 @@ const menuTextItems = document.querySelectorAll('.menu-item_text');
 
 const updateToggleIcon = () =>
   !logo.className.includes('hidden')
-    ? (toggleSidebar.src = './assets/close.png')
-    : (toggleSidebar.src = './assets/more.png');
+    ? (toggleSidebar.src = './assets/icons/close.png')
+    : (toggleSidebar.src = './assets/icons/more.png');
 
 updateToggleIcon();
 
