@@ -53,6 +53,9 @@ body {
 .menu-item_icon {
   height: 1.3em;
 }
+.menu-item_text {
+  padding-right: 2em;
+}
 
 .sidebar li {
   display: flex;
@@ -82,7 +85,7 @@ body {
 }
 .profile-navbar_icons a:nth-child(1) {
   font-size: 0.9em;
-  margin-right: 2px;
+  margin-right: 3px;
 }
 .profile-navbar_icons a:nth-child(3) {
   font-size: 1.15em;
@@ -94,7 +97,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 0.6em;
+  gap: 1.4em;
   margin-right: 1em;
 }
 .profile-navbar_icons img:hover {

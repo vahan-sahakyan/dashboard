@@ -7,13 +7,16 @@ const updateToggleIcon = () =>
     ? (toggleSidebar.src = './assets/icons/close.png')
     : (toggleSidebar.src = './assets/icons/more.png');
 
-updateToggleIcon();
-
-toggleSidebar.addEventListener('click', () => {
+const toggleHandler = () => {
   menuTextItems.forEach(item => {
     item.classList.toggle('hidden');
     console.log(item);
   });
   logo.classList.toggle('hidden');
   updateToggleIcon();
-});
+};
+
+updateToggleIcon();
+toggleHandler();
+
+toggleSidebar.addEventListener('click', toggleHandler);
